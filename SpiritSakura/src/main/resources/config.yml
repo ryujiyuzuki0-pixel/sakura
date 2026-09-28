@@ -1,0 +1,23 @@
+# ---- Resource pack delivery ----
+pack:
+  # Colorway: crimson, ember, emerald, abyss, royal, frost, obsidian, ivory, venom, solar
+  # (or switch live with /sakura theme <name>)
+  theme: crimson
+  # Send the pack to players when they join.
+  send-on-join: true
+  # Kick players who decline the pack.
+  force: false
+  prompt: "<gold>Spirit set</gold> <gray>models and armor</gray>"
+
+  # Option A (default): the plugin hosts the pack itself.
+  host:
+    enabled: true
+    # Address players use to reach your server. Use your public IP / domain.
+    public-address: "127.0.0.1"
+    port: 8163          # open this TCP port in your firewall / hosting panel
+    bind: "0.0.0.0"
+
+  # Option B: host the zips yourself (plugins/SpiritSakura/packs/<theme>.zip).
+  # Set host.enabled to false and put the direct link here; {theme} is replaced
+  # with the current theme name, e.g. https://example.com/{theme}.zip
+  external-url: ""

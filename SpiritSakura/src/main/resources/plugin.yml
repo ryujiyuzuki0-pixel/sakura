@@ -1,0 +1,14 @@
+name: SpiritSakura
+version: '${version}'
+main: io.spiritsakura.SpiritSakuraPlugin
+api-version: '1.21.4'
+description: Spirit weapon, tool and armor set (multiple colorways) with built-in resource pack hosting.
+commands:
+  sakura:
+    description: Spirit Sakura set commands
+    usage: /sakura <give|list|themes|theme|pack|reload>
+    aliases: [spiritsakura]
+permissions:
+  spiritsakura.admin:
+    description: Use /sakura give, reload and pack
+    default: op
